@@ -1,0 +1,53 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  background: red;
+  color: black;
+}
+
+header .navbar-brand {
+  font-size: 1.25rem;
+}
+
+.card {
+  border-radius: 10px;
+  transition: transform 0.18s ease, box-shadow 0.18s ease;
+}
+
+.card-img {
+  height: 160px;
+  object-fit: cover;
+}
+
+.featured-card {
+  min-width: 280px;
+  max-width: 320px;
+  flex: 0 0 auto;
+}
+
+.featured-card .card-body {
+  padding: 12px;
+}
+
+.card:hover {
+  transform: translateY(-6px) scale(1.01);
+  box-shadow: 0 12px 30px rgba(0,0,0,0.12);
+}
+
+.enroll-btn {
+  white-space: nowrap;
+}
+
+#featuredWrapper {
+  padding-bottom: 6px;
+}
+
+@media (max-width: 768px) {
+  .card-img {
+    height: 130px;
+  }
+  .featured-card {
+    min-width: 240px;
+  }
+}
+

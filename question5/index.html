@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Vignesh Siva Selvan | Portfolio</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+  <style>
+    .question-nav {
+      background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+      padding: 12px 0;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+    }
+    .question-nav .btn {
+      margin: 0 4px;
+      font-size: 0.9rem;
+    }
+    body {
+      font-family: "Poppins", sans-serif;
+      background-color: blue;
+      color: black;
+      scroll-behavior: smooth;
+    }
+
+    header {
+      background-color: red;
+      color: yellow;
+      text-align: center;
+      padding: 2rem 1rem;
+    }
+
+    header h1 {
+      font-size: 2rem;
+      font-weight: 700;
+    }
+
+    nav a {
+      color: green;
+      margin: 0 10px;
+      font-weight: 500;
+    }
+
+    section {
+      padding: 60px 0;
+    }
+
+    .section-title {
+      text-align: center;
+      margin-bottom: 2rem;
+      font-weight: 700;
+      color: #0d6efd;
+    }
+
+    .card {
+      border-radius: 10px;
+      box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+      transition: transform 0.3s ease;
+    }
+
+    .card:hover {
+      transform: scale(1.05);
+    }
+
+    footer {
+      background-color:pink;
+      color: gray;
+      text-align: center;
+      padding: 15px 0;
+    }
+
+    #clock {
+      font-weight: 600;
+    }
+
+    .tech-icon {
+      display: inline-block;
+      background: red;
+      color: green;
+      border-radius: 6px;
+      padding: 8px 12px;
+      margin: 6px;
+      font-weight: 500;
+    }
+  </style>
+</head>
+
+<body>
+  <nav class="question-nav">
+    <div class="container d-flex justify-content-between align-items-center flex-wrap">
+      <div class="d-flex gap-2 flex-wrap">
+        <a href="../index.html" class="btn btn-light btn-sm">🏠 Home</a>
+        <span class="text-white fw-bold align-self-center">Question 5</span>
+      </div>
+      <div class="d-flex gap-1 flex-wrap">
+        <a href="../Question1/index.html" class="btn btn-outline-light btn-sm">Q1</a>
+        <a href="../Question2/index.html" class="btn btn-outline-light btn-sm">Q2</a>
+        <a href="../Question3/index.html" class="btn btn-outline-light btn-sm">Q3</a>
+        <a href="../Question%204/index.html" class="btn btn-outline-light btn-sm">Q4</a>
+      </div>
+    </div>
+  </nav>
+  <!-- Header -->
+  <header>
+    <h1>Vignesh Siva Selvan</h1>
+    <p id="greeting"></p>
+    <p id="clock"></p>
+
+    <nav class="navbar navbar-expand-md navbar-dark bg-primary mt-3">
+      <div class="container">
+        <a class="navbar-brand" href="#">Portfolio</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse justify-content-end" id="navMenu">
+          <ul class="navbar-nav">
+            <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+            <li class="nav-item"><a class="nav-link" href="#internship">Internship</a></li>
+            <li class="nav-item"><a class="nav-link" href="#tech">Tech Stack</a></li>
+            <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
+            <li class="nav-item"><a class="nav-link" href="#github">GitHub</a></li>
+            <li class="nav-item"><a class="nav-link" href="#focus">Focus</a></li>
+            <li class="nav-item"><a class="nav-link" href="#contact">Connect</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <!-- About Section -->
+  <section id="about" class="container">
+    <h2 class="section-title">About Me</h2>
+    <p class="text-center">
+      Hi, I'm <b>Vignesh Siva Selvan</b> - a passionate and dedicated web developer with growing expertise in <b>AI/ML</b> and <b>IoT</b>.
+      I love building dynamic, user-friendly web applications and exploring innovative tech solutions.
+    </p>
+    <ul>
+      <li><b>Passion:</b> Building intelligent, scalable web applications and IoT solutions</li>
+      <li><b>Focus:</b> Full Stack Development, AI/ML, IoT Integrations</li>
+      <li><b>Currently Learning:</b> Advanced AI/ML, IoT & PICSimLab</li>
+      <li><b>Looking To Collaborate:</b> Yes</li>
+      <li><b>Email:</b> vignesh.sivaselvan@gmail.com</li>
+    </ul>
+  </section>
+
+  <!-- Internship Section -->
+  <section id="internship" class="bg-light">
+    <div class="container">
+      <h2 class="section-title">Internship Experience</h2>
+
+      <div class="card p-3 mb-3">
+        <h5>Emertxe Information Technologies</h5>
+        <p><b>Embedded Systems & IoT Intern (May 2025 - Present, Remote)</b></p>
+        <ul>
+          <li>Learning real-world tech skills in IoT and embedded systems.</li>
+          <li>Hands-on with PIC microcontrollers and IoT solutions.</li>
+          <li>Collaborating through industry-level exposure.</li>
+        </ul>
+      </div>
+
+      <div class="card p-3 mb-3">
+        <h5>YBI Foundation</h5>
+        <p><b>AI/ML and Data Science Intern (Python)</b></p>
+        <ul>
+          <li>Completed a certified internship focused on practical AI/ML applications using Python.</li>
+        </ul>
+      </div>
+
+      <div class="card p-3">
+        <h5>CopterCode, IITM Research Park, Madras</h5>
+        <p><b>Full Stack Developer Intern</b></p>
+        <ul>
+          <li>Hands-on experience in full stack development using modern frameworks.</li>
+          <li>Worked on real-world projects in a research-oriented environment.</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- Tech Stack Section -->
+  <section id="tech" class="container text-center">
+    <h2 class="section-title">Tech Stack</h2>
+    <div>
+      <span class="tech-icon">PHP</span>
+      <span class="tech-icon">Java</span>
+      <span class="tech-icon">MySQL</span>
+      <span class="tech-icon">Git</span>
+      <span class="tech-icon">HTML5</span>
+      <span class="tech-icon">CSS3</span>
+      <span class="tech-icon">Node.js</span>
+      <span class="tech-icon">Express</span>
+      <span class="tech-icon">Python</span>
+      <span class="tech-icon">Arduino</span>
+    </div>
+  </section>
+
+  <!-- Projects Section -->
+  <section id="projects" class="bg-light">
+    <div class="container">
+      <h2 class="section-title">Featured Projects</h2>
+      <div class="row g-4">
+        <div class="col-md-4">
+          <div class="card p-3">
+            <h5>Digi-Ration</h5>
+            <p>Modernized ration shop solution for online access to ration services.<br><b>Tech:</b> PHP, MySQL</p>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card p-3">
+            <h5>EntreVest</h5>
+            <p>Java desktop application connecting investors and entrepreneurs.<br><b>Tech:</b> Java, GUI</p>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card p-3">
+            <h5>SurvAlert (In Progress)</h5>
+            <p>Disaster management web app with real-time alerts.<br><b>Tech:</b> React, PHP</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- GitHub Section -->
+  <section id="github" class="container text-center">
+    <h2 class="section-title">GitHub Analytics</h2>
+    <img src="https://github-readme-stats.vercel.app/api?username=vignesh-sivaselvan&show_icons=true&theme=tokyonight" alt="GitHub Stats" class="img-fluid">
+  </section>
+
+  <!-- Focus Section -->
+  <section id="focus" class="bg-light text-center">
+    <div class="container">
+      <h2 class="section-title">Current Focus</h2>
+      <p>Deepening my skills in AI/ML and IoT development. Actively working on side projects to build real-world experience.</p>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="container text-center">
+    <h2 class="section-title">Connect With Me</h2>
+    <p>Email: <a href="mailto:vignesh.sivaselvan@gmail.com">vignesh.sivaselvan@gmail.com</a></p>
+    <a href="https://www.linkedin.com/in/vignesh-sivaselvan/" class="btn btn-primary m-2">LinkedIn Profile</a>
+    <a href="https://github.com/vignesh-sivaselvan" class="btn btn-dark m-2">GitHub Profile</a>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p> 2025 Vignesh Siva Selvan. All rights reserved.</p>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  <script>
+    // Live clock + greeting
+    function updateClock() {
+      const now = new Date();
+      const time = now.toLocaleTimeString();
+      document.getElementById("clock").innerText = time;
+
+      const hour = now.getHours();
+      let greeting;
+      if (hour < 12) greeting = "Good Morning ";
+      else if (hour < 18) greeting = "Good Afternoon ";
+      else greeting = "Good Evening";
+      document.getElementById("greeting").innerText = greeting;
+    }
+    setInterval(updateClock, 1000);
+    updateClock();
+
+    // Smooth scroll animation
+    $(document).ready(function() {
+      $("a.nav-link").on("click", function(event) {
+        if (this.hash !== "") {
+          event.preventDefault();
+          const hash = this.hash;
+          $("html, body").animate({
+            scrollTop: $(hash).offset().top - 60
+          }, 700);
+        }
+      });
+    });
+  </script>
+</body>
+</html>
+

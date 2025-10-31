@@ -1,0 +1,67 @@
+:root {
+  --primary: #6366f1;
+  --secondary: #8b5cf6;
+  --accent: #ec4899;
+  --bg-gradient: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  --light-bg: #f8fafc;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: var(--light-bg);
+  min-height: 100vh;
+}
+
+h1 {
+  background: var(--bg-gradient);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  font-weight: 700;
+}
+
+form, #eventDetails, #preview {
+  border-radius: 16px;
+  border: none;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+}
+
+form {
+  background: white;
+}
+
+input, select {
+  border-radius: 10px;
+  border: 2px solid #e2e8f0;
+  transition: all 0.3s ease;
+}
+
+input:focus, select:focus {
+  border-color: var(--primary);
+  box-shadow: 0 0 0 3px rgba(99, 102, 241, 0.1);
+}
+
+button {
+  border-radius: 10px;
+  background: var(--bg-gradient);
+  border: none;
+  font-weight: 600;
+  transition: all 0.3s ease;
+}
+
+button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(102, 126, 234, 0.4);
+}
+
+#eventDetails, #preview {
+  background: white;
+  border-left: 4px solid var(--primary);
+}
+
+@media (max-width: 576px) {
+  form {
+    padding: 2rem 1rem;
+  }
+}
+

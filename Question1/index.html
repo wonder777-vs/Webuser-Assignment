@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<head>
+  <title>TechSymposium 2025 Registration</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="script.js"></script>
+  <style>
+    .question-nav {
+      background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+      padding: 12px 0;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+    }
+    .question-nav .btn {
+      margin: 0 4px;
+      font-size: 0.9rem;
+    }
+  </style>
+</head>
+<body>
+  <nav class="question-nav">
+    <div class="container d-flex justify-content-between align-items-center flex-wrap">
+      <div class="d-flex gap-2 flex-wrap">
+        <a href="../index.html" class="btn btn-light btn-sm">🏠 Home</a>
+        <span class="text-white fw-bold align-self-center">Question 1</span>
+      </div>
+      <div class="d-flex gap-1 flex-wrap">
+        <a href="../Question2/index.html" class="btn btn-outline-light btn-sm">Q2</a>
+        <a href="../Question3/index.html" class="btn btn-outline-light btn-sm">Q3</a>
+        <a href="../Question%204/index.html" class="btn btn-outline-light btn-sm">Q4</a>
+        <a href="../question5/index.html" class="btn btn-outline-light btn-sm">Q5</a>
+      </div>
+    </div>
+  </nav>
+  <div class="container my-5">
+    <h1 class="text-center mb-4 text-white">TechSymposium 2025 Registration</h1>
+    <div class="row">
+      <div class="col-lg-6 mb-4">
+        <form id="regForm" class="p-4 border rounded shadow bg-light">
+          <h4 class="mb-3 text-center">Participant Details</h4>
+          <div class="mb-3">
+            <label for="name" class="form-label">Full Name:</label>
+            <input type="text" id="name" class="form-control" placeholder="Enter your full name" required>
+          </div>
+          <div class="mb-3">
+            <label for="email" class="form-label">Email:</label>
+            <input type="email" id="email" class="form-control" placeholder="you@example.com" required>
+          </div>
+          <div class="mb-3">
+            <label for="phone" class="form-label">Phone Number:</label>
+            <input type="tel" id="phone" class="form-control" pattern="[0-9]{10}" placeholder="10-digit number" required>
+          </div>
+          <div class="mb-3">
+            <label for="college" class="form-label">College:</label>
+            <input list="colleges" id="college" class="form-control" placeholder="Type or select">
+            <datalist id="colleges">
+              <option value="IIT Madras">
+              <option value="NIT Trichy">
+              <option value="Anna University">
+              <option value="VIT Chennai">
+              <option value="SRM Institute of Science and Technology">
+            </datalist>
+          </div>
+          <div class="mb-3">
+            <label for="event" class="form-label">Select Event:</label>
+            <select id="event" class="form-select" required>
+              <option value="">Choose an event</option>
+              <option value="Coding Marathon">Coding Marathon</option>
+              <option value="Robo Race">Robo Race</option>
+              <option value="Paper Presentation">Paper Presentation</option>
+              <option value="Hackathon">Hackathon</option>
+            </select>
+          </div>
+          <button type="submit" class="btn btn-primary w-100">Register</button>
+        </form>
+      </div>
+      <div class="col-lg-6">
+        <div class="p-4 border rounded shadow bg-white mb-3" id="eventDetails">
+          <h4 class="mb-3">Event Details</h4>
+          <p>Select an event to see its details here.</p>
+        </div>
+        <div id="preview" class="p-4 border rounded shadow bg-light d-none">
+          <h4 class="mb-3">Registration Preview</h4>
+          <p id="previewContent"></p>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
+

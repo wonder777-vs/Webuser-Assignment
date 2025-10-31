@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<head>
+  <title>Employee Performance Dashboard</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="script.js"></script>
+  <style>
+    .question-nav {
+      background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+      padding: 12px 0;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+    }
+    .question-nav .btn {
+      margin: 0 4px;
+      font-size: 0.9rem;
+    }
+  </style>
+</head>
+<body>
+  <nav class="question-nav">
+    <div class="container d-flex justify-content-between align-items-center flex-wrap">
+      <div class="d-flex gap-2 flex-wrap">
+        <a href="../index.html" class="btn btn-light btn-sm">🏠 Home</a>
+        <span class="text-white fw-bold align-self-center">Question 2</span>
+      </div>
+      <div class="d-flex gap-1 flex-wrap">
+        <a href="../Question1/index.html" class="btn btn-outline-light btn-sm">Q1</a>
+        <a href="../Question3/index.html" class="btn btn-outline-light btn-sm">Q3</a>
+        <a href="../Question%204/index.html" class="btn btn-outline-light btn-sm">Q4</a>
+        <a href="../question5/index.html" class="btn btn-outline-light btn-sm">Q5</a>
+      </div>
+    </div>
+  </nav>
+  <header class="p-3 text-center text-white">
+    <h1>Company Employee Dashboard</h1>
+  </header>
+  <main class="container my-4">
+    <div class="d-flex justify-content-between align-items-center mb-3">
+      <div>
+        <label for="deptFilter" class="form-label me-2">Filter by Department:</label>
+        <select id="deptFilter" class="form-select d-inline-block w-auto">
+          <option value="all">All</option>
+          <option value="Development">Development</option>
+          <option value="Design">Design</option>
+          <option value="Marketing">Marketing</option>
+        </select>
+      </div>
+      <button id="themeToggle" class="btn btn-secondary">Switch Theme</button>
+    </div>
+    <section id="dashboard" class="row g-3">
+      <div class="col-md-6 col-lg-4 employee-card" data-dept="Development">
+        <div class="card shadow">
+          <div class="card-header bg-primary text-white d-flex justify-content-between">
+            <span>Vignesh</span>
+            <button class="btn btn-sm btn-light toggle-btn">-</button>
+          </div>
+          <div class="card-body">
+            <p>Department: Development</p>
+            <label>Task Completion</label>
+            <div class="progress mb-2">
+              <div class="progress-bar bg-success" style="width: 85%">85%</div>
+            </div>
+            <label>Team Collaboration</label>
+            <div class="progress">
+              <div class="progress-bar bg-info" style="width: 70%">70%</div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6 col-lg-4 employee-card" data-dept="Design">
+        <div class="card shadow">
+          <div class="card-header bg-warning text-dark d-flex justify-content-between">
+            <span>Sivajothi</span>
+            <button class="btn btn-sm btn-light toggle-btn">-</button>
+          </div>
+          <div class="card-body">
+            <p>Department: Design</p>
+            <label>Creativity</label>
+            <div class="progress mb-2">
+              <div class="progress-bar bg-success" style="width: 90%">90%</div>
+            </div>
+            <label>Project Delivery</label>
+            <div class="progress">
+              <div class="progress-bar bg-info" style="width: 75%">75%</div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6 col-lg-4 employee-card" data-dept="Marketing">
+        <div class="card shadow">
+          <div class="card-header bg-success text-white d-flex justify-content-between">
+            <span>Siva Selvan</span>
+            <button class="btn btn-sm btn-light toggle-btn">-</button>
+          </div>
+          <div class="card-body">
+            <p>Department: Marketing</p>
+            <label>Campaign Success</label>
+            <div class="progress mb-2">
+              <div class="progress-bar bg-success" style="width: 80%">80%</div>
+            </div>
+            <label>Client Engagement</label>
+            <div class="progress">
+              <div class="progress-bar bg-info" style="width: 68%">68%</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer class="text-center p-3 text-white">
+    <p>VIGNESH INFOTECH</p>
+  </footer>
+</body>
+</html>
+

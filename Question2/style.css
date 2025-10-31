@@ -1,0 +1,79 @@
+:root {
+  --primary: #0ea5e9;
+  --secondary: #06b6d4;
+  --accent: #f59e0b;
+  --bg-light: #f0f9ff;
+  --bg-dark: #0c4a6e;
+  --text-dark: #0f172a;
+  --text-light: #ffffff;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: linear-gradient(to bottom right, #f0f9ff, #e0f2fe);
+  transition: background 0.4s, color 0.4s;
+  min-height: 100vh;
+}
+
+header, footer {
+  background: linear-gradient(135deg, var(--primary), var(--secondary));
+  color: var(--text-light);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.dark-theme {
+  background: linear-gradient(to bottom right, #1e293b, #0f172a);
+  color: #e2e8f0;
+}
+
+.dark-theme header, .dark-theme footer {
+  background: linear-gradient(135deg, #1e3a8a, #1e40af);
+}
+
+.dark-theme .card {
+  background: #1e293b;
+  color: #e2e8f0;
+  border: 1px solid #334155;
+}
+
+.card {
+  border-radius: 16px;
+  transition: all 0.3s ease;
+  border: none;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.08);
+}
+
+.card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 12px 28px rgba(0, 0, 0, 0.15);
+}
+
+.card-header {
+  border-radius: 16px 16px 0 0 !important;
+  font-weight: 600;
+}
+
+.progress {
+  height: 10px;
+  border-radius: 10px;
+}
+
+#themeToggle {
+  border-radius: 10px;
+  font-weight: 600;
+  transition: all 0.3s ease;
+}
+
+#themeToggle:hover {
+  transform: scale(1.05);
+}
+
+@media (max-width: 576px) {
+  header h1 {
+    font-size: 1.2rem;
+  }
+  .card-body {
+    font-size: 0.9rem;
+  }
+}
+
